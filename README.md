@@ -33,3 +33,11 @@ streamlit run app.py
 ```
 
 Never commit `.env` or API credentials.
+
+## Verification
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The tests exercise statement validation, common write-query bypass attempts, read-only database access, and the 100-row output limit. GitHub Actions runs them for each pull request.
